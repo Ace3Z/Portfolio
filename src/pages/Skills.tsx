@@ -74,7 +74,6 @@ const categories: SkillCategory[] = [
 const Skills: React.FC = () => {
   return (
     <div className="skills-container">
-      <h2 className="skills-title">SKILLS</h2>
       {categories.map((category) => (
         <div key={category.title} className="skill-category">
           <h3 className="category-title">{category.title}</h3>
