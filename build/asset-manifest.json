@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6048245c.css",
+    "main.js": "/static/js/main.3d4fedbd.js",
+    "static/js/453.b0cd7502.chunk.js": "/static/js/453.b0cd7502.chunk.js",
+    "static/media/mlfin.png": "/static/media/mlfin.605577021c66a6ee74f3.png",
+    "static/media/rz.png": "/static/media/rz.b940fe5733be8b8435d2.png",
+    "static/media/ab.png": "/static/media/ab.5658a601f68f475ac864.png",
+    "static/media/rs.png": "/static/media/rs.17889bcbba2d428640eb.png",
+    "static/media/fball.png": "/static/media/fball.2936162056c3b8c6244a.png",
+    "static/media/os.png": "/static/media/os.9703bc86992cd97d989a.png",
+    "static/media/420.jpeg": "/static/media/420.80c6a2af4c039444b24a.jpeg",
+    "static/media/mahbod.jpg": "/static/media/mahbod.3696c67449d5753ea6f4.jpg",
+    "static/media/wb.jpg": "/static/media/wb.1beb0104db79d922891b.jpg",
+    "static/media/ev.jpg": "/static/media/ev.2770f775b5ef623be131.jpg",
+    "static/media/rt.jpeg": "/static/media/rt.ed189776ddbb0e964fbd.jpeg",
+    "static/media/eat_that_frog.jpg": "/static/media/eat_that_frog.813c8f47ac052b6d620c.jpg",
+    "static/media/blue.png": "/static/media/blue.9b293a4a6ef065903a8f.png",
+    "static/media/netflix-sound.mp3": "/static/media/netflix-sound.a13a4aedfb5da5a27f04.mp3",
+    "static/media/sign.jpg": "/static/media/sign.e28783aac76ebf149abe.jpg",
+    "static/media/unfck.jpg": "/static/media/unfck.e0c1ffa9764344acfa98.jpg",
+    "static/media/mvsh.jpg": "/static/media/mvsh.7f2524e904b06fedf36e.jpg",
+    "static/media/yellow.png": "/static/media/yellow.2631c5cf63f02f6bbfbf.png",
+    "static/media/pbs.jpg": "/static/media/pbs.7d7765b11e3364f63f29.jpg",
+    "static/media/phantom.jpeg": "/static/media/phantom.be187f199f0a9fc37d8f.jpeg",
+    "static/media/lp.jpg": "/static/media/lp.2e913965915113a041a7.jpg",
+    "static/media/alchemist.jpg": "/static/media/alchemist.9c7b8d90f87afb9eb1f9.jpg",
+    "static/media/atomic_habits.jpg": "/static/media/atomic_habits.1e9739efe6a8eca8240a.jpg",
+    "static/media/rich_dad_poor_dad.jpg": "/static/media/rich_dad_poor_dad.3e652088b5ec2c6f8709.jpg",
+    "index.html": "/index.html",
+    "main.6048245c.css.map": "/static/css/main.6048245c.css.map",
+    "main.3d4fedbd.js.map": "/static/js/main.3d4fedbd.js.map",
+    "453.b0cd7502.chunk.js.map": "/static/js/453.b0cd7502.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6048245c.css",
+    "static/js/main.3d4fedbd.js"
+  ]
+}
