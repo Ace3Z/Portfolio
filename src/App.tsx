@@ -4,7 +4,8 @@ import NetflixTitle from './NetflixTitle';
 import ProfilePage from './profilePage/profilePage';
 import Browse from './browse/browse';
 import WorkPermit from './pages/WorkPermit';
-import WorkExperience from './pages/WorkExperience';
+import Experience from './pages/Experience';
+import Education from './pages/Education';
 import Recommendations from './pages/Recommendations';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
@@ -22,7 +23,9 @@ const App: React.FC = () => {
       <Route path="/browse" element={<Browse />} />
       <Route path="/profile/:profileName" element={<Layout><ProfilePage /></Layout>} />
       <Route path="/work-permit" element={<Layout><WorkPermit /></Layout>} />
-      <Route path="/work-experience" element={<Layout><WorkExperience /></Layout>} />
+      <Route path="/experience" element={<Layout><Experience /></Layout>} />
+      <Route path="/education" element={<Layout><Education /></Layout>} />
+      <Route path="/work-experience" element={<Layout><Experience /></Layout>} />
       <Route path="/recommendations" element={<Layout><Recommendations /></Layout>} />
       <Route path="/skills" element={<Layout><Skills /></Layout>} />
       <Route path="/projects" element={<Layout><Projects /></Layout>} />
