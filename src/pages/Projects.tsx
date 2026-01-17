@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Projects.css';
 import { FaGithub } from 'react-icons/fa';
 import { Project } from '../types';
-import { getProjects } from '../queries/getProjects';
 import financeImage from '../images/mlfin.png';
 import trbImage from '../images/fball.png';
 
 
 const Projects: React.FC = () => {
-  const [projects, setProjects] = useState<Project[]>([])
   const fallbackProjects: Project[] = [
     {
       title: 'ML in Finance & Insurance',
@@ -26,20 +24,7 @@ const Projects: React.FC = () => {
     }
   ];
   
-  useEffect(() => { 
-    async function fetchProjects() {
-      try {
-        const data = await getProjects();
-        setProjects(data);
-      } catch (error) {
-        console.error('Failed to load projects:', error);
-      }
-    }
-    
-    fetchProjects()
-  }, [])
-  
-  const displayProjects = projects.length > 0 ? projects.slice(0, 2) : fallbackProjects;
+  const displayProjects = fallbackProjects;
 
   return (
     <div className="projects-container">

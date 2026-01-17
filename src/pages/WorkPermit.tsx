@@ -1,28 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './WorkPermit.css';
-import { getWorkPermit } from '../queries/getWorkPermit';
 import { WorkPermit as IWorkPermit } from '../types';
 const WorkPermit: React.FC = () => {
 
-  const [workPermitData, setWorkPermitData] = useState<IWorkPermit | null>(null);
-  const fallbackData = {
+  const fallbackData: IWorkPermit = {
     visaStatus: 'Swiss Residence Permit (Type B)',
+    expiryDate: new Date('2027-08-31'),
+    summary: 'Open to roles in Switzerland while studying.',
     additionalInfo: 'For any additional queries please reach me out on +41 78 447 88 87!'
   };
-  useEffect(() => {
-    async function fetchWorkPermitData() {
-      try {
-        const data = await getWorkPermit();
-        setWorkPermitData(data);
-      } catch (error) {
-        console.error('Failed to load work permit data:', error);
-      }
-    }
-    fetchWorkPermitData();
-  }, []);
-
-  const visaStatus = workPermitData?.visaStatus || fallbackData.visaStatus;
-  const additionalInfo = workPermitData?.additionalInfo || fallbackData.additionalInfo;
+  const visaStatus = fallbackData.visaStatus;
+  const additionalInfo = fallbackData.additionalInfo;
 
   return (
     <div className="work-permit-container">

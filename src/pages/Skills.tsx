@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Skills.css';
-import { getSkills } from '../queries/getSkills';
 
 import { FaReact, FaNodeJs, FaAws, FaDocker, FaJava } from 'react-icons/fa';
 import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiRabbitmq, SiImessage } from 'react-icons/si';
@@ -29,22 +28,38 @@ const iconMap: { [key: string]: JSX.Element } = {
 
 const Skills: React.FC = () => {
 
-  const [skillsData, setSkillsData] = useState<Skill[]>([]);
-
-  useEffect(() => {
-    async function fetchSkills() {
-      try {
-        const data = await getSkills();
-        setSkillsData(data);
-      } catch (error) {
-        console.error('Failed to load skills:', error);
-      }
+  const skillsData: Skill[] = [
+    {
+      name: 'Python',
+      category: 'Languages',
+      description: 'Data analysis, ML pipelines, and reproducible research workflows.',
+      icon: 'FaReact'
+    },
+    {
+      name: 'TypeScript',
+      category: 'Languages',
+      description: 'Typed UI development with React.',
+      icon: 'SiTypescript'
+    },
+    {
+      name: 'React',
+      category: 'Frontend',
+      description: 'Component-driven UI and state management.',
+      icon: 'FaReact'
+    },
+    {
+      name: 'Node.js',
+      category: 'Backend',
+      description: 'APIs and tooling for web services.',
+      icon: 'FaNodeJs'
+    },
+    {
+      name: 'Docker',
+      category: 'DevOps',
+      description: 'Containerized development and deployment.',
+      icon: 'FaDocker'
     }
-
-    fetchSkills()
-  }, []);
-
-  if (skillsData.length === 0) return <div>Loading...</div>;
+  ];
 
   const skillsByCategory = skillsData.reduce((acc: any, skill: any) => {
     if (!acc[skill.category]) acc[skill.category] = [];

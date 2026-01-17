@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaStar as StarIcon, FaBriefcase as WorkIcon, FaGraduationCap as SchoolIcon, FaHandsHelping as VolunteerIcon, FaFlask as ResearchIcon, FaChalkboardTeacher as TeachingIcon } from 'react-icons/fa';
 import './WorkExperience.css';
 import { TimelineItem } from '../types';
-import { getTimeline } from '../queries/getTimeline';
 
 type DisplayTimelineItem = TimelineItem & { theme?: 'primary' };
 
 const WorkExperience: React.FC = () => {
 
-  const [timeLineData, setTimeLineData] = useState<TimelineItem[] | null>(null);
   const fallbackTimeline: DisplayTimelineItem[] = [
     {
       timelineType: 'work',
@@ -185,20 +183,7 @@ const WorkExperience: React.FC = () => {
     }
   ];
 
-  useEffect(() => {
-    async function fetchTimelineItem() {
-      try {
-        const data = await getTimeline();
-        setTimeLineData(data);
-      } catch (error) {
-        console.error('Failed to load timeline:', error);
-      }
-    }
-    fetchTimelineItem();
-  }, []);
-
-
-  const displayTimeline = timeLineData || fallbackTimeline;
+  const displayTimeline = fallbackTimeline;
   const filteredTimeline = displayTimeline;
 
   return (

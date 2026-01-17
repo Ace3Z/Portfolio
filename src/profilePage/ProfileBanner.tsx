@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './ProfileBanner.css';
 import PlayButton from '../components/PlayButton';
 import MoreInfoButton from '../components/MoreInfoButton';
-import { getProfileBanner } from '../queries/getProfileBanner';
-import { ProfileBanner as ProfileBannerType } from '../types';
 
 type ProfileType = 'recruiter' | 'adventurer';
 
@@ -32,24 +30,7 @@ const fallbackContent: Record<
 const ProfileBanner: React.FC<ProfileBannerProps> = ({ profile }) => {
 
 
-  const [bannerData, setBannerData] = useState<ProfileBannerType | null>(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const data = await getProfileBanner();
-        setBannerData(data);
-      } catch (error) {
-        console.error('Failed to load profile banner data:', error);
-      }
-    }
-    fetchData();
-  }, []);
-
-  const headline = bannerData?.headline || fallbackContent[profile].headline;
-  const profileSummary = bannerData?.profileSummary || fallbackContent[profile].summary;
-  const resumeUrl = bannerData?.resumeLink?.url || fallbackContent[profile].resumeUrl;
-  const linkedinUrl = bannerData?.linkedinLink || fallbackContent[profile].linkedinUrl;
+  const { headline, summary: profileSummary, resumeUrl, linkedinUrl } = fallbackContent[profile];
 
   const handleResumeClick = () => {
     if (!resumeUrl) return;

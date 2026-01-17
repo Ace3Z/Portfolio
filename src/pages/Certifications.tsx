@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Certifications.css';
 import { FaExternalLinkAlt, FaUniversity, FaAward, FaRobot, FaBrain } from 'react-icons/fa';
 import { SiUdemy, SiCoursera, SiIeee, SiGoogle, SiIbm, SiTensorflow, SiAmazon } from 'react-icons/si';
 import { Certification } from '../types';
-import { getCertifications } from '../queries/getCertifications';
 const iconData: { [key: string]: { icon: JSX.Element; color: string } } = {
   udemy: { icon: <SiUdemy />, color: '#a435f0' },
   coursera: { icon: <SiCoursera />, color: '#2a73cc' },
@@ -161,22 +160,7 @@ const getCertificationSection = (cert: Certification) => {
 
 const Certifications: React.FC = () => {
 
-  const [certifications, setCertifications] = useState<Certification[]>([]);
-
-  useEffect(() => { 
-    async function fetchCertifications() {
-      try {
-        const data = await getCertifications();
-        setCertifications(data);
-      } catch (error) {
-        console.error('Failed to load certifications:', error);
-      }
-    }
-
-    fetchCertifications();
-  }, []);
-
-  const displayCertifications = certifications.length > 0 ? certifications : fallbackCertifications;
+  const displayCertifications = fallbackCertifications;
   const sections = displayCertifications.reduce<Record<string, Certification[]>>((acc, cert) => {
     const section = getCertificationSection(cert);
     if (!acc[section]) acc[section] = [];
