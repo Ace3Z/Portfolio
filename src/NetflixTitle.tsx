@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './NetflixTitle.css';
 import netflixSound from './netflix-sound.mp3';
 import { useNavigate } from 'react-router-dom';
-import logoImage from '../src/images/logo-2.png'; // Update with the path to your logo
+import logoImage from '../src/images/logo-2.png';
 
 const NetflixTitle = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -11,7 +11,7 @@ const NetflixTitle = () => {
   const handlePlaySound = () => {
     const audio = new Audio(netflixSound);
     audio.play().catch(error => console.error("Audio play error:", error));
-    setIsClicked(true); // Starts animation after clicking
+    setIsClicked(true); 
   };
 
   useEffect(() => {

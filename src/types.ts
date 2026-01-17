@@ -1,5 +1,3 @@
-// types.ts
-
 export interface ProfileBanner {
   backgroundImage: { url: string };
   headline: string;
