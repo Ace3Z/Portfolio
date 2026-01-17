@@ -10,17 +10,19 @@ interface ContinueWatchingProps {
 
 const continueWatchingConfig = {
   recruiter: [
-    { title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Reading", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Achievements", imgSrc: "https://picsum.photos/id/1035/300/200", link: "/achievements" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/recommendations/300/200", link: "/recommendations" },
+    { title: "Projects", imgSrc: "https://picsum.photos/seed/projects/300/200", link: "/projects" },
+    { title: "Skills", imgSrc: "https://picsum.photos/seed/skills/300/200", link: "/skills" },
+    { title: "Music", imgSrc: "https://picsum.photos/seed/music/300/200", link: "/music" },
+    { title: "Reading", imgSrc: "https://picsum.photos/seed/books/300/200", link: "/reading" },
+    { title: "Work Permit", imgSrc: "https://picsum.photos/seed/workpermit/300/200", link: "/work-permit" }
   ],
   adventurer: [
-    { title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Reading", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Achievements", imgSrc: "https://picsum.photos/id/1035/300/200", link: "/achievements" },
-    { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/recommendations/300/200", link: "/recommendations" },
+    { title: "Skills", imgSrc: "https://picsum.photos/seed/skills/300/200", link: "/skills" },
+    { title: "Work Permit", imgSrc: "https://picsum.photos/seed/workpermit/300/200", link: "/work-permit" },
+    { title: "Education", imgSrc: "https://picsum.photos/seed/education/300/200", link: "/education" },
+    { title: "Experience", imgSrc: "https://picsum.photos/seed/experience/300/200", link: "/experience" }
   ]
 };
 
