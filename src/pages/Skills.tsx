@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import { FaCode, FaDatabase, FaGlobe, FaLanguage } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaGlobe, FaLanguage, FaRobot } from 'react-icons/fa';
 import {
   SiCplusplus,
   SiDocker,
@@ -44,19 +44,20 @@ const categories: SkillCategory[] = [
   {
     title: 'Tools and Frameworks',
     items: [
-      { name: 'Jupyter', description: 'Interactive Notebooks', icon: <SiJupyter /> },
       { name: 'PyTorch', description: 'Deep Learning', icon: <SiPytorch /> },
       { name: 'TensorFlow', description: 'Deep Learning', icon: <SiTensorflow /> },
       { name: 'Scikit-Learn', description: 'Machine Learning', icon: <SiScikitlearn /> },
+      { name: 'HuggingFace', description: 'NLP Tooling', icon: <SiHuggingface /> },
+      { name: 'Jupyter', description: 'Interactive Notebooks', icon: <SiJupyter /> },
       { name: 'NumPy', description: 'Numerical Computing', icon: <SiNumpy /> },
       { name: 'Pandas', description: 'Data Analysis', icon: <SiPandas /> },
       { name: 'SciPy', description: 'Scientific Computing', icon: <SiScipy /> },
       { name: 'Statsmodels', description: 'Statistical Modeling', icon: <FaDatabase /> },
       { name: 'OpenCV', description: 'Computer Vision', icon: <SiOpencv /> },
-      { name: 'HuggingFace', description: 'NLP Tooling', icon: <SiHuggingface /> },
-      { name: 'MySQL', description: 'Relational Database', icon: <SiMysql /> },
+      { name: 'Roboflow', description: 'Computer Vision Platform', icon: <FaRobot /> },
       { name: 'Git', description: 'Version Control', icon: <SiGit /> },
-      { name: 'Docker', description: 'Containerization', icon: <SiDocker /> }
+      { name: 'Docker', description: 'Containerization', icon: <SiDocker /> },
+      { name: 'MySQL', description: 'Relational Database', icon: <SiMysql /> }
     ]
   },
   {
