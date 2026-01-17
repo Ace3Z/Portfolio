@@ -45,6 +45,12 @@
   box-shadow: 0 24px 40px rgba(0, 0, 0, 0.45);
 }
 
+.book-card:hover .book-title,
+.book-card:hover .book-author,
+.book-card:hover .book-description {
+  color: #e50914;
+}
+
 .book-cover {
   width: 100%;
   height: 220px;
