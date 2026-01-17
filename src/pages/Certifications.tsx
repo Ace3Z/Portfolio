@@ -159,15 +159,6 @@ const getCertificationSection = (cert: Certification) => {
   return 'Other';
 };
 
-const sectionIconMap: Record<string, JSX.Element> = {
-  Google: iconData.google.icon,
-  'DeepLearning.AI': iconData.deeplearning.icon,
-  'Stanford Online': iconData.university.icon,
-  Anthropic: iconData.anthropic.icon,
-  IBM: iconData.ibm.icon,
-  Other: iconData.university.icon
-};
-
 const Certifications: React.FC = () => {
 
   const [certifications, setCertifications] = useState<Certification[]>([]);

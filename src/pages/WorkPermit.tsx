@@ -7,7 +7,6 @@ const WorkPermit: React.FC = () => {
   const [workPermitData, setWorkPermitData] = useState<IWorkPermit | null>(null);
   const fallbackData = {
     visaStatus: 'Swiss Residence Permit (Type B)',
-    expiryDate: 'August 2026',
     additionalInfo: 'For any additional queries please reach me out on +41 78 447 88 87!'
   };
   useEffect(() => {
@@ -23,9 +22,6 @@ const WorkPermit: React.FC = () => {
   }, []);
 
   const visaStatus = workPermitData?.visaStatus || fallbackData.visaStatus;
-  const expiryDate = workPermitData?.expiryDate
-    ? new Date(workPermitData.expiryDate).toLocaleDateString('en-US')
-    : '5/1/2025';
   const additionalInfo = workPermitData?.additionalInfo || fallbackData.additionalInfo;
 
   return (

@@ -213,7 +213,6 @@ const WorkExperience: React.FC = () => {
           const isResearch = item.timelineType === 'research';
           const isVolunteer = item.timelineType === 'volunteer';
           const isTeaching = item.timelineType === 'teaching';
-          const isWorkLike = isWork || isResearch || isVolunteer || isTeaching;
           const normalizedDateRange = `${item.dateRange || ''}`
             .toLowerCase()
             .replace(/[\u2013\u2014]/g, '-');
