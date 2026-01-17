@@ -1,7 +1,8 @@
 // getDatoCmsToken.ts
 
 export const getDatoCmsToken = (): string => {
-  const hostname = window.location.hostname;
+  const hostname = window.location.hostname.toLowerCase();
+  const defaultToken = process.env.REACT_APP_DATOCMS_DEFAULT_TOKEN ?? '';
 
   switch (hostname) {
     case 'ror.sumanthsamala.com':
@@ -23,6 +24,9 @@ export const getDatoCmsToken = (): string => {
       return process.env.REACT_APP_DATOCMS_NODE_TOKEN ?? '';
 
     default:
+      if (defaultToken) {
+        return defaultToken;
+      }
       throw new Error(`No DatoCMS token configured for hostname: ${hostname}`);
   }
 };
