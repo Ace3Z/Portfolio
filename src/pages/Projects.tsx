@@ -3,7 +3,7 @@ import './Projects.css';
 import { FaGithub } from 'react-icons/fa';
 import { Project } from '../types';
 import { getProjects } from '../queries/getProjects';
-import financeImage from '../images/mlfin 12.49.26.png';
+import financeImage from '../images/mlfin.png';
 import trbImage from '../images/fball.png';
 
 
