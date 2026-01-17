@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import { FaDatabase, FaGlobe, FaLanguage } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaGlobe, FaLanguage } from 'react-icons/fa';
 import {
   SiCplusplus,
   SiDocker,
@@ -11,7 +11,6 @@ import {
   SiNumpy,
   SiOpencv,
   SiPandas,
-  SiProlog,
   SiPython,
   SiPytorch,
   SiR,
@@ -37,7 +36,7 @@ const categories: SkillCategory[] = [
     items: [
       { name: 'Python', description: 'Programming Language', icon: <SiPython /> },
       { name: 'R', description: 'Statistical Programming', icon: <SiR /> },
-      { name: 'Prolog', description: 'Logic Programming', icon: <SiProlog /> },
+      { name: 'Prolog', description: 'Logic Programming', icon: <FaCode /> },
       { name: 'C++', description: 'Systems Programming', icon: <SiCplusplus /> },
       { name: 'SQL', description: 'Query Language', icon: <FaDatabase /> }
     ]
