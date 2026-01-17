@@ -1,0 +1,126 @@
+/* Certifications.css */
+
+.certifications-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 8rem 1.5rem 6rem;
+  text-align: center;
+  background: radial-gradient(circle at top, #1c1c1c 0%, #121212 55%);
+  color: #f5f5f5;
+}
+
+.certifications-title {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  width: 100%;
+  max-width: 980px;
+  justify-items: center;
+}
+
+.certification-section {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto 3rem;
+}
+
+.certification-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 0 0 1.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+}
+
+.certification-card {
+  background: #2b2b2b;
+  border-radius: 14px;
+  padding: 1.6rem 1.6rem 1.8rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: cardFadeIn 0.5s forwards ease-in-out;
+  animation-delay: var(--delay);
+  min-height: 200px;
+  height: 200px;
+  width: 200px;
+  max-width: 200px;
+}
+
+.certification-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 26px rgba(229, 9, 20, 0.45), 0 18px 38px rgba(0, 0, 0, 0.6);
+}
+
+.certification-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 80%;
+  height: 100%;
+}
+
+.certification-icon {
+  font-size: 2.2rem;
+  color: #6aa9ff;
+  margin-bottom: 0.3rem;
+}
+
+.certification-link {
+  font-size: 1.4rem;
+  color: #e02020;
+  transition: transform 0.2s ease;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.certification-card:hover .certification-link {
+  transform: scale(1.2);
+}
+
+.certification-content h3 {
+  font-size: 1.05rem;
+  margin: 0;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.certification-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #d2d2d2;
+}
+
+.issued-date {
+  font-size: 0.8rem;
+  color: #9a9a9a;
+  margin-top: auto;
+}
+
+@keyframes cardFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
