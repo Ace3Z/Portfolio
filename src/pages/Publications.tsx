@@ -13,8 +13,9 @@ type Publication = {
 };
 
 const researchInterests = `
-I focus on data-driven systems at the intersection of machine learning, computer vision, and robotics.
-I am especially interested in robust perception, spatiotemporal modeling, and deploying reliable AI in real-world environments.
+My research interests span three distinct yet complementary areas: robot perception, computer vision and machine learning, and data-driven bioinformatics. 
+I am passionate about developing intelligent perceptual systems for autonomous robots, advancing machine learning techniques for visual understanding, and applying computational approaches to biological data analysis.
+I aspire to pursue doctoral research that allows me to contribute to these transformative fields.
 `;
 
 const publications: Publication[] = [
@@ -23,15 +24,15 @@ const publications: Publication[] = [
     authors: 'Dionysios Kyriazopoulos, Mauricio Verano Merino, Mahbod Tajdini',
     venue: 'ACM Computing Surveys (ACM CSUR)',
     year: '2026',
-    summary: 'Review and resubmit.',
+    summary: 'Review and resubmit',
     tags: ['Machine Learning', 'Sports Analytics', 'Survey']
   },
   {
     title: 'The Clash of Codes: From Peer-to-Peer Duplication to AI-Generation in Introductory Programming Assignments',
     authors: 'Mahbod Tajdini, Jose Maria Zuarte Reis Claver, Mauricio Verano Merino',
-    venue: 'ICSE 2026 SEET Track',
+    venue: 'International Conference on Software Engineering (ICSE) - SEET Track',
     year: '2026',
-    summary: 'Accepted.',
+    summary: 'Accepted',
     tags: ['Software Engineering', 'Education', 'AI']
   },
   {
@@ -39,7 +40,7 @@ const publications: Publication[] = [
     authors: 'Pooyan Nayyeri, Mahbod Tajdini',
     venue: 'eBook',
     year: '2022',
-    summary: 'Open-access eBook.',
+    summary: 'Open-access eBook',
     link: 'https://pnnayyeri.github.io/contents/labview_book_en.pdf',
     tags: ['Robotics', 'Education', 'LabVIEW']
   }

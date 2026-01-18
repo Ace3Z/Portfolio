@@ -15,13 +15,13 @@ const fallbackContent: Record<
 > = {
   recruiter: {
     headline: 'Mahbod Tajdini - Data Science Student',
-    summary: 'Analytical and research-focused Data Scientist with a strong background in Artificial Intelligence and ongoing Master’s studies in Data Science at Universität Zürich, with academic affiliation to ETH Zürich. I intend to pursue a PhD focusing on robot perception, computer vision, and machine learning, alongside data-driven approaches in bioinformatics',
+    summary: 'Analytical and research-focused Data Scientist with a strong background in Artificial Intelligence and ongoing Master’s studies in Data Science at Universität Zürich, with academic affiliation to ETH Zürich. I intend to pursue a PhD focusing on robot perception, computer vision, and machine learning, alongside data-driven approaches in bioinformatics.',
     resumeUrl: '/Mahbod_Tajdini_CV.pdf',
     linkedinUrl: 'https://www.linkedin.com/in/mahbodtajdini/'
   },
   adventurer: {
     headline: 'Mahbod Tajdini - Data Science Student',
-    summary: 'Analytical and research-focused Data Scientist with a strong background in Artificial Intelligence and ongoing Master’s studies in Data Science at Universität Zürich, with academic affiliation to ETH Zürich. I intend to pursue a PhD focusing on robot perception, computer vision, and machine learning, alongside data-driven approaches in bioinformatics',
+    summary: 'Analytical and research-focused Data Scientist with a strong background in Artificial Intelligence and ongoing Master’s studies in Data Science at Universität Zürich, with academic affiliation to ETH Zürich. I intend to pursue a PhD focusing on robot perception, computer vision, and machine learning, alongside data-driven approaches in bioinformatics.',
     resumeUrl: '/Mahbod_Tajdini_CV.pdf',
     linkedinUrl: 'https://www.linkedin.com/in/mahbodtajdini/'
   }
