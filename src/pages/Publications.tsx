@@ -19,22 +19,29 @@ I am especially interested in robust perception, spatiotemporal modeling, and de
 
 const publications: Publication[] = [
   {
-    title: 'Paper Title Placeholder',
-    authors: 'Mahbod Tajdini, Co-author Name',
-    venue: 'Conference / Journal Name',
-    year: '2025',
-    summary: 'One-sentence summary of the contribution and results.',
-    link: '',
-    tags: ['Computer Vision', 'Robotics', 'Perception']
+    title: 'Capitalising on Football Data with Machine Learning: A Literature Review',
+    authors: 'Dionysios Kyriazopoulos, Mauricio Verano Merino, Mahbod Tajdini',
+    venue: 'ACM Computing Surveys (ACM CSUR)',
+    year: '2026',
+    summary: 'Review and resubmit.',
+    tags: ['Machine Learning', 'Sports Analytics', 'Survey']
   },
   {
-    title: 'Another Publication Placeholder',
-    authors: 'Mahbod Tajdini, Co-author Name',
-    venue: 'Workshop / Journal Name',
-    year: '2024',
-    summary: 'Brief description of the method, dataset, or impact.',
-    link: '',
-    tags: ['Machine Learning', 'Spatiotemporal Modeling']
+    title: 'The Clash of Codes: From Peer-to-Peer Duplication to AI-Generation in Introductory Programming Assignments',
+    authors: 'Mahbod Tajdini, Jose Maria Zuarte Reis Claver, Mauricio Verano Merino',
+    venue: 'ICSE 2026 SEET Track',
+    year: '2026',
+    summary: 'Accepted.',
+    tags: ['Software Engineering', 'Education', 'AI']
+  },
+  {
+    title: 'Programming Lego MINDSTORMS Robots using NI LabVIEW®',
+    authors: 'Pooyan Nayyeri, Mahbod Tajdini',
+    venue: 'eBook',
+    year: '2022',
+    summary: 'Open-access eBook.',
+    link: 'https://pnnayyeri.github.io/contents/labview_book_en.pdf',
+    tags: ['Robotics', 'Education', 'LabVIEW']
   }
 ];
 
