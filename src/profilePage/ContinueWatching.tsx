@@ -22,7 +22,8 @@ const continueWatchingConfig = {
     { title: "Skills", imgSrc: "https://picsum.photos/seed/skills/300/200", link: "/skills" },
     { title: "Work Permit", imgSrc: "https://picsum.photos/seed/workpermit/300/200", link: "/work-permit" },
     { title: "Education", imgSrc: "https://picsum.photos/seed/education/300/200", link: "/education" },
-    { title: "Experience", imgSrc: "https://picsum.photos/seed/experience/300/200", link: "/experience" }
+    { title: "Experience", imgSrc: "https://picsum.photos/seed/experience/300/200", link: "/experience" },
+    { title: "Publications", imgSrc: "https://picsum.photos/seed/publications/300/200", link: "/publications" }
   ]
 };
 
