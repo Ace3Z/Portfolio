@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './TopPicksRow.css';
 import { FaBriefcase, FaCertificate, FaProjectDiagram, FaEnvelope, FaMusic, FaBook, FaGraduationCap, FaTrophy } from 'react-icons/fa';
 
-type ProfileType = 'recruiter' | 'adventurer';
+type ProfileType = 'recruiter' | 'explorer';
 
 interface TopPicksRowProps {
   profile: ProfileType;
@@ -18,7 +18,7 @@ const topPicksConfig = {
     { title: "Achievements", imgSrc: "https://picsum.photos/seed/achievements/250/200", icon: <FaTrophy />, route: "/achievements" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/seed/connect/250/200", icon: <FaEnvelope />, route: "/contact-me" }
   ],
-  adventurer: [
+  explorer: [
     { title: "Music", imgSrc: "https://picsum.photos/seed/music/250/200", route: "/music", icon: <FaMusic /> },
     { title: "Reading", imgSrc: "https://picsum.photos/seed/books/250/200", route: "/reading", icon: <FaBook /> },
     { title: "Projects", imgSrc: "https://picsum.photos/seed/innovation/250/200", route: "/projects", icon: <FaProjectDiagram /> },
