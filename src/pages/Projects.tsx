@@ -4,6 +4,10 @@ import { FaGithub } from 'react-icons/fa';
 import { Project } from '../types';
 import financeImage from '../images/mlfin.png';
 import trbImage from '../images/fball.png';
+import blueImage from '../images/blue.png';
+import greyImage from '../images/grey.png';
+import redImage from '../images/red.png';
+import yellowImage from '../images/yellow.png';
 
 
 const Projects: React.FC = () => {
@@ -21,6 +25,34 @@ const Projects: React.FC = () => {
       techUsed: 'Python, Statistics, Data Visualization, Analytics',
       image: { url: trbImage },
       link: 'https://github.com/Ace3Z/Football-TRB'
+    },
+    {
+      title: 'Meme CV Project',
+      description: 'Lightweight experimental computer vision workspace focused on real-time detection and gesture data collection using YOLOv8 and DeepFace, with utilities for capturing training images and integrating Roboflow workflows for inference and annotation.',
+      techUsed: 'Python, YOLOv8, DeepFace, Roboflow, Computer Vision',
+      image: { url: blueImage },
+      link: 'https://github.com/Ace3Z/Meme-CV-project'
+    },
+    {
+      title: 'BERT Twitter Sentiment Analysis',
+      description: 'Sentiment analysis pipeline that applies lexicon-based methods, Naive Bayes with vectorization, and fine-tuned BERT models to Twitter text data, training and comparing approaches for classifying tweet sentiment.',
+      techUsed: 'Python, BERT, NLP, Naive Bayes, Vectorization',
+      image: { url: redImage },
+      link: 'https://github.com/Ace3Z/bert-twitter-sentiment-analysis'
+    },
+    {
+      title: 'Euro Meat Mortality Analysis',
+      description: 'Data-wrangling and exploratory analysis exploring per-capita consumption of multiple meat categories across European countries (2009–2019) and their relationships with overall and cardiovascular mortality rates.',
+      techUsed: 'Python, Data Wrangling, EDA, Public Health',
+      image: { url: greyImage },
+      link: 'https://github.com/Ace3Z/euro-meat-mortality-analysis'
+    },
+    {
+      title: 'Football Player Stats Ontology',
+      description: 'Dataset construction and SPARQL-driven analytics project building a consolidated ontology of football players’ biographical and performance statistics to support structured queries and in-depth sport analytics via notebook and RDF representations.',
+      techUsed: 'RDF, SPARQL, Knowledge Graphs, Data Modeling',
+      image: { url: yellowImage },
+      link: 'https://github.com/Ace3Z/football-player-stats-ontology'
     }
   ];
   
