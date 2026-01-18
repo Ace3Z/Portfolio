@@ -7,7 +7,7 @@ import trbImage from '../images/fball.png';
 import memeImage from '../images/eyes-closed.jpg';
 import twitterImage from '../images/tw.jpg';
 import meatImage from '../images/mp.png';
-import ontolImage from '../images/ontol.png';
+import ontolImage from '../images/ontol.jpg';
 
 const Projects: React.FC = () => {
   const fallbackProjects: Project[] = [
