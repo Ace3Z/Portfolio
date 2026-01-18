@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { Project } from '../types';
 import financeImage from '../images/mlfin.png';
 import trbImage from '../images/fball.png';
-import memeImage from '../images/meme.png';
+import memeImage from '../images/eyes-closed.jpg';
 import twitterImage from '../images/tw.jpg';
 import meatImage from '../images/mp.png';
 import ontolImage from '../images/ontol.png';
