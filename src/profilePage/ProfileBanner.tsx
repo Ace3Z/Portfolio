@@ -34,14 +34,7 @@ const ProfileBanner: React.FC<ProfileBannerProps> = ({ profile }) => {
 
   const handleResumeClick = () => {
     if (!resumeUrl) return;
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'Mahbod_Tajdini_CV.pdf';
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open(resumeUrl, '_blank', 'noopener,noreferrer');
   };
 
   const handleLinkedinClick = () => { 
@@ -58,7 +51,7 @@ const ProfileBanner: React.FC<ProfileBannerProps> = ({ profile }) => {
         </p>
 
         <div className="banner-buttons">
-          <PlayButton onClick={handleResumeClick} label="Download CV" />
+          <PlayButton onClick={handleResumeClick} label="Read CV" />
           <MoreInfoButton onClick={handleLinkedinClick} label="LinkedIn" />
         </div>
       </div>
