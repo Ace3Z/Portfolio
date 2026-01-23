@@ -24,15 +24,15 @@ const publications: Publication[] = [
     authors: 'Dionysios Kyriazopoulos, Mauricio Verano Merino, Mahbod Tajdini',
     venue: 'ACM Computing Surveys (ACM CSUR)',
     year: '2026',
-    summary: 'Review and resubmit',
+    summary: 'Under Review',
     tags: ['Machine Learning', 'Sports Analytics', 'Survey']
   },
   {
     title: 'The Clash of Codes: From Peer-to-Peer Duplication to AI-Generation in Introductory Programming Assignments',
     authors: 'Mahbod Tajdini, Jose Maria Zuarte Reis Claver, Mauricio Verano Merino',
     venue: 'International Conference on Software Engineering (ICSE) - SEET Track',
-    year: '2026',
-    summary: 'Accepted',
+    year: '2026', 
+    summary: 'To Appear',
     tags: ['Software Engineering', 'Education', 'AI']
   },
   {
