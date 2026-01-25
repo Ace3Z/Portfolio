@@ -17,7 +17,7 @@ const educationTimeline: TimelineItem[] = [
     name: 'Vrije Universiteit Amsterdam (VU Amsterdam)',
     title: "Bachelor’s degree in Artificial Intelligence 🎓",
     summaryPoints: [
-      '🎊 Graduated cum laude with a GPA of 8.5/10 (=4.0 GPA)',
+      '🎊 Graduated cum laude with a GPA of 8.5/10 (=4.0 GPA).',
       'Ranked Top 8% of the cohort.',
       '📜 My Bachelor’s thesis, titled "Exploring Ball Recovery Times in Professional Football: Insights and Patterns", was completed under the supervision of Dr. Mauricio Verano Merino.'
     ],
