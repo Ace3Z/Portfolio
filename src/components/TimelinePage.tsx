@@ -91,6 +91,28 @@ const TimelinePage: React.FC<TimelinePageProps> = ({ title, items }) => {
           const summaryPoints = Array.isArray(item.summaryPoints)
             ? item.summaryPoints
             : [item.summaryPoints];
+          const cardBody = (
+            <div className="timeline-card">
+              {item.timelineType === 'work' || isVolunteer || isResearch || isTeaching ? (
+                <>
+                  <h3 className="vertical-timeline-element-title">{item.title}</h3>
+                  <h4 className="vertical-timeline-element-subtitle">{item.name}</h4>
+                </>
+              ) : (
+                <>
+                  <h3 className="vertical-timeline-element-title">{item.name}</h3>
+                  <h4 className="vertical-timeline-element-subtitle">{item.title}</h4>
+                </>
+              )}
+              <ul className="timeline-points">
+                {summaryPoints.map((point, pointIndex) => (
+                  <li key={pointIndex} className="timeline-point">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
 
           return (
             <VerticalTimelineElement
@@ -118,26 +140,19 @@ const TimelinePage: React.FC<TimelinePageProps> = ({ title, items }) => {
                         : <SchoolIcon />
               }
             >
-              <div className="timeline-card">
-                {item.timelineType === 'work' || isVolunteer || isResearch || isTeaching ? (
-                  <>
-                    <h3 className="vertical-timeline-element-title">{item.title}</h3>
-                    <h4 className="vertical-timeline-element-subtitle">{item.name}</h4>
-                  </>
-                ) : (
-                  <>
-                    <h3 className="vertical-timeline-element-title">{item.name}</h3>
-                    <h4 className="vertical-timeline-element-subtitle">{item.title}</h4>
-                  </>
-                )}
-                <ul className="timeline-points">
-                  {summaryPoints.map((point, pointIndex) => (
-                    <li key={pointIndex} className="timeline-point">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {item.link ? (
+                <a
+                  className="timeline-card-link"
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${item.title} at ${item.name}`}
+                >
+                  {cardBody}
+                </a>
+              ) : (
+                cardBody
+              )}
             </VerticalTimelineElement>
           );
         })}

@@ -90,6 +90,18 @@
   color: currentColor;
 }
 
+.timeline-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline-card-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
 .vertical-timeline-element-icon {
   box-shadow: 0 0 0 4px #ffffff;
 }

@@ -5,10 +5,11 @@ import { TimelineItem } from '../types';
 type DisplayTimelineItem = TimelineItem & { theme?: 'primary' };
 
 const experienceTimeline: DisplayTimelineItem[] = [
-    {
+  {
     timelineType: 'research',
     name: 'EPFL - Signal Processing Laboratory (LTS4)',
     title: 'Visiting Student Researcher 👨🏽‍🔬',
+    link: 'https://www.epfl.ch/labs/lts4/',
     summaryPoints: [
       '🧪 Conducting research on scalable cell-graph representations for digital pathology, focusing on batch-effect–robust graph construction, edge enhancement with tissue context, and graph diversity to improve generalization',
       'Investigating multimodal foundation-model approaches that combine cell graphs and vision models, exploring efficient fine-tuning strategies and curated large-scale datasets for robust zero-shot and transfer learning'
