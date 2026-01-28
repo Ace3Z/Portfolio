@@ -1,6 +1,3 @@
-/* Navbar.css */
-
-/* Main Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -16,7 +13,7 @@
 }
 
 .navbar.scrolled {
-  background-color: #141414; /* Netflix black when scrolled */
+  background-color: #141414; 
 }
 
 .navbar-left, .navbar-right {

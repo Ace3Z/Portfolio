@@ -5,6 +5,16 @@ import { TimelineItem } from '../types';
 type DisplayTimelineItem = TimelineItem & { theme?: 'primary' };
 
 const experienceTimeline: DisplayTimelineItem[] = [
+    {
+    timelineType: 'research',
+    name: 'EPFL - Signal Processing Laboratory (LTS4)',
+    title: 'Visiting Student Researcher 👨🏽‍🔬',
+    summaryPoints: [
+      '🧪 Conducting research on scalable cell-graph representations for digital pathology, focusing on batch-effect–robust graph construction, edge enhancement with tissue context, and graph diversity to improve generalization',
+      'Investigating multimodal foundation-model approaches that combine cell graphs and vision models, exploring efficient fine-tuning strategies and curated large-scale datasets for robust zero-shot and transfer learning'
+    ],
+    dateRange: 'Feb 2026 - Present'
+  },
   {
     timelineType: 'work',
     name: 'Forward·Inc',
@@ -47,7 +57,7 @@ const experienceTimeline: DisplayTimelineItem[] = [
   },
   {
     timelineType: 'research',
-    name: 'Vrije Universiteit Amsterdam (VU Amsterdam)',
+    name: 'Vrije Universiteit Amsterdam (VU Amsterdam) - Sports Intelligence Lab (SIL)',
     title: 'Research Assistant 👨🏽‍🔬',
     summaryPoints: [
       '🧪 Collaborating with Dr. Mauricio Verano Merino at the Sports Intelligence Lab (SIL) on multiple research projects, applying data-driven approaches in computer science and sports analytics.',
