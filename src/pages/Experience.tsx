@@ -30,7 +30,7 @@ const experienceTimeline: DisplayTimelineItem[] = [
     timelineType: 'teaching',
     name: 'ETH Zürich D-USYS',
     title: 'Teaching Assistant 🧑🏽‍🏫',
-    link: 'https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2026S\&ansicht=ALLE\&lerneinheitId=201478\&lang=en',
+    link: 'https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2026S&ansicht=ALLE&lerneinheitId=201478&lang=en',
     summaryPoints: [
       '📚 Serving as a Teaching Assistant for Environmental Systems Data Science: Machine Learning (701-3003-00L) under the supervision of Prof. Dr. Loïc Pellissier and Dr. Camille Pierre Albouy.'
     ],
